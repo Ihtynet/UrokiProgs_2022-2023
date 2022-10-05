@@ -1,7 +1,7 @@
 from tkinter import *
 
 root = Tk()
-root.title("Урок 10-10-2022")
+root.title("Урок 01-10-2022")
 root.geometry("300x300")
 
 canvas = Canvas(bg="white", width=260, height=260)
