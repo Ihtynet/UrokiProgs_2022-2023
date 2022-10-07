@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 telebot = "*"
 aiogram = "*"
+pygame = "*"
 
 [dev-packages]
 
