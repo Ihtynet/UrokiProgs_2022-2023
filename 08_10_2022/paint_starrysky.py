@@ -2,7 +2,7 @@ import random
 from tkinter import *
 
 root = Tk()
-root.title("Урок 10-10-2022")
+root.title("Урок 08-10-2022")
 root.geometry("610x610")
 
 canvas = Canvas(bg="black", width=600, height=600)
