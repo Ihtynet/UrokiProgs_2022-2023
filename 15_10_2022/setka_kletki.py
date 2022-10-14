@@ -15,8 +15,8 @@ for i in range(10):
 	d=d+dd
 
 for i in range(10):
-	x = random.randint(1,10)*dd
-	y = random.randint(1,10)*dd
-	canvas.create_rectangle(x,y, x+dd,y+dd, fill="black")
+	x = random.randint(0,9)*dd
+	y = random.randint(0,9)*dd
+	canvas.create_rectangle(x, y, x+dd, y+dd, fill="black")
 
 root.mainloop()
