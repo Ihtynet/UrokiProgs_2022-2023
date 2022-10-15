@@ -23,7 +23,9 @@ my=0
 mascolor =["black","green","red","yellow","blue"]
 
 for i in range(10):
-	col = random.choice(mascolor)  # Получаем случайныйцвет из нашего массива
+	# Получаем случайныйцвет из нашего массива
+	col = random.choice(mascolor)
+
 	x = random.randint(1,10) *dd-dd/2
 	y = random.randint(1,10)*dd-dd/2
 	canvas.create_oval(x-20,y-20, x+20,y+20, fill=col)
