@@ -28,7 +28,10 @@ for i in range(10):
 	y = random.randint(1,10)*dd-dd/2
 	canvas.create_oval(x-20,y-20, x+20,y+20, fill=col)
 	if i !=0:
-		canvas.create_line(mx,my,x,y, width=3, fill="green", dash=(4, 2)) # рисуем зеленую пунктирную линию
+		# рисуем зеленую пунктирную линию
+		# dash - это пунктирная линия. В скобках указываетс размер
+		#        линии и промежутка
+		canvas.create_line(mx,my,x,y, width=3, fill="green", dash=(4, 2))
 	mx=x  # запомнили текущую x
 	my=y  # запомнили текущую y
 
