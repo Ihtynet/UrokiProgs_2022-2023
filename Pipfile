@@ -8,6 +8,7 @@ telebot = "*"
 aiogram = "*"
 pygame = "*"
 freegames = "*"
+pillow = "*"
 
 [dev-packages]
 
