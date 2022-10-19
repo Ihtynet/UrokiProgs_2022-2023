@@ -21,6 +21,8 @@ async def send_welcome(msg: types.Message):
 async def get_text_messages(msg: types.Message):
    if msg.text.lower() == 'привет':
        await msg.answer('Привет!')
+       photo = open('empty.png', 'rb')
+       await msg.answer_photo(photo, "мое фото")
    else:
        await msg.answer('Не понимаю, что это значит.')
 
