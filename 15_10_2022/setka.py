@@ -12,7 +12,18 @@ import random
 root = Tk()
 root.title("Урок 15-10-2022")
 root.geometry("850x850")
-root.attributes("-topmost",True)
+#################################
+# Окно всегда сверху
+#root.attributes("-topmost",True)
+
+# У окна убран заголовок
+#root.overrideredirect(True)
+
+# У окна есть статусбар
+#statusbar = Label(root, text="on the way…", bd=1, relief=SUNKEN, anchor=W)
+#statusbar.pack(side=BOTTOM, fill=X)
+#################################
+
 canvas = Canvas(bg="white", width=800, height=800)
 canvas.pack(anchor=CENTER, expand=1)
 
