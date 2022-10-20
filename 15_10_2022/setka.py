@@ -12,6 +12,7 @@ import random
 root = Tk()
 root.title("Урок 15-10-2022")
 root.geometry("850x850")
+root.attributes("-topmost",True)
 canvas = Canvas(bg="white", width=800, height=800)
 canvas.pack(anchor=CENTER, expand=1)
 
