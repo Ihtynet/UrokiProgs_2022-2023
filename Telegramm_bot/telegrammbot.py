@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(msg: types.Message):
-    await msg.answer('Я бот. Приятно познакомиться! \n')#+str(msg.from_user))
+    await msg.answer('Привет! Я бот. Приятно познакомиться, \n'+str(msg.from_user.first_name)+"!")
 
 """    keyboard = types.ReplyKeyboardMarkup()
     button_1 = types.KeyboardButton(text="С пюрешкой")
