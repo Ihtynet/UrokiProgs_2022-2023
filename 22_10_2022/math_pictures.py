@@ -4,7 +4,7 @@
 ##
 ###############################
 
-from tkinter import *
+from tkinter  import *
 import random
 
 root = Tk()
@@ -49,18 +49,24 @@ def krugy1():
         canvas.create_oval(x, x, 800-x, 800-x)
 
 def linii1():
-    for x in range(0,810,10):
+    for x in range(0,801,10):
+        canvas.create_line(x, 0, 800-x, 800)
+        canvas.create_line(0, x, 800, 800-x)
+
+
+"""    for x in range(0,801,10):
         canvas.create_line(400, 400, x, 0)
         canvas.create_line(400, 400, 0, x)
         canvas.create_line(400, 400, x, 800)
-        canvas.create_line(400, 400, 800, x)
+        canvas.create_line(400, 400, 800, x)"""
+
 
 def krugy2():
     for x in range(20,400,10):
         canvas.create_oval(x, x, 400-x, 400-x)
-        canvas.create_oval(x+400, x, 400-x+400, 400-x)
-        canvas.create_oval(x, x+400, 400-x, 400-x+400)
-        canvas.create_oval(x+400, x+400, 400-x+400, 400-x+400)
+        canvas.create_oval(x+400, x, 800-x, 400-x)
+        canvas.create_oval(x, x+400, 400-x, 800-x)
+        canvas.create_oval(x+400, x+400, 800-x, 800-x)
 
 def kvadraty2():
     dx=20
@@ -84,9 +90,9 @@ def misen():
 
 #krugy1()
 #kvadraty1()
-#linii1()
+linii1()
 #krugy2()
 #kvadraty2()
-misen()
+#misen()
 
 root.mainloop()
