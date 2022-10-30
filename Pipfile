@@ -9,6 +9,7 @@ aiogram = "*"
 pygame = "*"
 freegames = "*"
 pillow = "*"
+pyttsx3 = "*"
 
 [dev-packages]
 
