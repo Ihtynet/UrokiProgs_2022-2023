@@ -7,7 +7,7 @@ def get_otvet(stroka):
         otvet = "Здравствуй, дорогой!"
     elif "как дела" in stroka:
         otvet = "Пока все хорошо!"
-    elif stroka == "выход" or  stroka == "конец" or  stroka == "q":
+    elif stroka == "выход" or  stroka == "конец" or stroka == "q":
         otvet = "До свидания"
     else:
         otvet = "Я не понял вопроса"
