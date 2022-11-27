@@ -10,6 +10,8 @@ pygame = "*"
 freegames = "*"
 pillow = "*"
 pyttsx3 = "*"
+beautifulsoup4 = "*"
+pandas = "*"
 
 [dev-packages]
 
